@@ -1,0 +1,11 @@
+.site__footer {
+  font-family: $font__header;
+  background-color: $color__background-footer;
+  color: $color__font-footer;
+  padding: 1rem;
+  .footer__titre,
+  .footer__presentation,
+  .footer__author {
+    text-align: center;
+  }
+}

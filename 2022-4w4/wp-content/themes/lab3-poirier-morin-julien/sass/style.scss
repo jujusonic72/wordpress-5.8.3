@@ -1,0 +1,18 @@
+/**
+Theme Name: Lab3 Julien Poirier Morin
+*/
+
+//Variables
+@import "variables/variables";
+
+//Elements
+@import "elements/links";
+
+//Initialisation
+@import "init/normalize";
+@import "init/box-sizing";
+
+//Components
+@import "components/components";
+//Layout
+@import "layout/layout";

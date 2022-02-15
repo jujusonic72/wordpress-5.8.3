@@ -1,0 +1,17 @@
+/*
+theme name: Lab1 Poirier Morin Julien
+*/
+body {
+    background-color: bisque;
+    font-family: Arial;
+}
+article {
+    width: 30%;
+    padding: 15px;
+    border: 1px dotted #ddd;
+    background-color: rgb(134, 90, 24);
+}
+h1 {
+    font-size: 3rem;
+    color: red;
+}

@@ -1,0 +1,28 @@
+.site {
+  display: grid;
+  // gap: 20px;
+  grid-template-columns: ($size__site-sidebar) auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+  .site__header {
+    grid-area: header;
+    background-color: $color__background-header;
+  }
+  .site__barre {
+    grid-area: sidebar;
+    background-color: $color__background-barre;
+  }
+  .site__main {
+    grid-area: main;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: $color__background-main;
+  }
+  .site__footer {
+    grid-area: footer;
+    background-color: $color__background-footer;
+  }
+}
