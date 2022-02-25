@@ -22,18 +22,37 @@
 .site__barre {
   background-color: transparent;
 }
+.site__footer__menu__ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1 1  5%;
+  & a{
+    height: 100%;
+  }
+}
+.site__header__menu__ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
 .menu {
   list-style-type: none;
   padding: 0;
   padding-top: 1rem;
   &-item {
-    margin: 0;
+    list-style-type: none;
     padding: 0px;
+    width: 90%;
+    
     a {
       display: block;
       text-decoration: none;
-      padding: 0.5rem;
+      padding: 0.3rem;
+      margin: 0.15rem 0;
       background-color: $color__background-link;
+      border-radius: 1rem;
       &:hover {
         background-color: $color__background-link-hover;
       }

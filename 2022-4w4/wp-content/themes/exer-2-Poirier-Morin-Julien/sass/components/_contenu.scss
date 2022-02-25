@@ -63,10 +63,11 @@
 
   &__container:hover {
     .bloc__bleu {
-      transform: translateX(-210%);
+      transform: translateX(-105%) scaleX(220%);
+      
     }
     .bloc__orange {
-      transform: translateX(210%);
+      transform: translateX(105%) scaleX(220%);
     }
     .formation__cours {
       box-shadow: 5px 5px $color__background-main;

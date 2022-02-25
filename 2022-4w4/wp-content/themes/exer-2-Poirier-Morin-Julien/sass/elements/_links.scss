@@ -38,3 +38,25 @@ a {
     $color__link__header-hover
   );
 }
+@mixin icones ($couleur, $couleur--visited, $couleur--hover) {
+  color: $couleur;
+
+  &:visited{
+    color: $couleur--visited;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $couleur--hover;
+  }
+}
+
+.icone {
+  @include icones($color__icone, $color__icone-visited, $color__icone-hover)
+}
+
+.site__header__menu__ul a:hover{
+  & svg{
+    @include icones($color__icone-hover, $color__icone-hover, $color__font-cours-sigle);
+  }
+}

@@ -2,6 +2,7 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
+  
   grid-template-areas:
     "sidebar"
     "header"
@@ -22,6 +23,7 @@
     grid-area: main;
     background-color: $color__background-main;
     border-radius: 2rem;
+    padding: 2rem;
   }
   &__footer {
     grid-area: footer;
