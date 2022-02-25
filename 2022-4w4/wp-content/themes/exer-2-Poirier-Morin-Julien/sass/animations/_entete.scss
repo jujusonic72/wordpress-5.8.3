@@ -1,0 +1,27 @@
+.animation {
+  display: flex;
+  justify-content: space-around;
+  &__bloc {
+    animation: anim-entete 1s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-color: $color__background-barre;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}

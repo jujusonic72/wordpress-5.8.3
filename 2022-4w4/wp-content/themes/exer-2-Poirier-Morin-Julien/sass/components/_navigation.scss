@@ -1,0 +1,59 @@
+#chk-burger {
+  display: none;
+}
+#burger {
+  position: fixed;
+  z-index: 2;
+  transition: transform 0.2s;
+  transform: rotate(0);
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+.menu-principal-container {
+  display: none;
+}
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+  transform: scale(1, 0);
+  animation: animationOverlay 0.5s forwards;
+}
+.site__barre {
+  background-color: transparent;
+}
+.menu {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 1rem;
+  &-item {
+    margin: 0;
+    padding: 0px;
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 0.5rem;
+      background-color: $color__background-link;
+      &:hover {
+        background-color: $color__background-link-hover;
+      }
+    }
+  }
+}
+@media screen and (min-width: $largeur__media--tablette) {
+  .menu-principal-container {
+    display: block;
+  }
+  #burger {
+    display: none;
+  }
+}
+@keyframes animationOverlay {
+  from {
+    transform: scale(1, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}

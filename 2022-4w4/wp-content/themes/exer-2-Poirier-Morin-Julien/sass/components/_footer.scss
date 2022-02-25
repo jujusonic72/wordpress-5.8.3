@@ -1,0 +1,41 @@
+.site__footer {
+  font-family: $font__header;
+  background-color: $color__background-footer;
+  color: $color__font-footer;
+  padding: 1rem;
+  &__menu {
+    // .site__menu__footer
+    &__ul {
+      // .site__menu__footer__ul
+      padding: 0;
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      .menu-item {
+        width: 20%;
+        margin: 10px 5px;
+        border-radius: 3px;
+        a {
+          text-align: center;
+          display: flex;
+          align-items: center;
+          padding: 3px;
+          svg {
+            color: white;
+          }
+        }
+
+        &:hover {
+          svg {
+            color: $color__background-barre;
+          }
+        }
+      }
+    }
+  }
+  .footer__titre,
+  .footer__presentation,
+  .footer__author {
+    text-align: center;
+  }
+}
