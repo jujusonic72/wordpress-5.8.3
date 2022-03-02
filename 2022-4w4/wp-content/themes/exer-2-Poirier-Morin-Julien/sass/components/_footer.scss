@@ -9,10 +9,11 @@
       // .site__menu__footer__ul
       padding: 0;
       display: flex;
+      flex-wrap: wrap;
       list-style-type: none;
       justify-content: center;
       .menu-item {
-        width: 20%;
+        width: 10%;
         margin: 10px 5px;
         border-radius: 3px;
         a {

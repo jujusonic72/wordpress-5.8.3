@@ -621,12 +621,13 @@ html {
 .site__footer__menu__ul {
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
 }
 
 .site__footer__menu__ul .menu-item {
-  width: 20%;
+  width: 10%;
   margin: 10px 5px;
   border-radius: 3px;
 }
