@@ -771,7 +771,7 @@ html {
   gap: 20px;
   grid-template-columns: 1fr;
   grid-template-areas: "sidebar" "header" "main" "footer";
-  color: #1f86b6;
+  color: #2787b4;
 }
 
 .site__header {
