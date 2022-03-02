@@ -416,7 +416,7 @@ html {
 }
 
 .site {
-  background-color: #171b2b;
+  background-color: #121521;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
 }
@@ -716,7 +716,7 @@ html {
 }
 
 .menu-item a:hover {
-  background-color: #2b406e;
+  background-color: #2c4477;
 }
 
 @media screen and (min-width: 768px) {
