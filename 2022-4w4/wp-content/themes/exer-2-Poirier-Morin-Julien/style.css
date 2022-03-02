@@ -90,7 +90,7 @@ a:hover, a:active {
 }
 
 .site__header__menu__ul a:hover svg:hover, .site__header__menu__ul a:hover svg:focus, .site__header__menu__ul a:hover svg:active {
-  color: #6be6d2;
+  color: #59c8b6;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -517,7 +517,7 @@ html {
 
 .cours__sigle {
   font-size: 1.5rem;
-  color: #6be6d2;
+  color: #59c8b6;
   text-shadow: 1px 1px 0px black;
 }
 
