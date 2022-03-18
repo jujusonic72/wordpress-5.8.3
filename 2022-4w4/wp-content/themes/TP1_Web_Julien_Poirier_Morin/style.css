@@ -79,7 +79,7 @@ a:hover, a:active {
 }
 
 .site__footer__reseaux-sociaux div:first-of-type a svg {
-  color: #434c52;
+  color: white;
 }
 
 .site__footer__reseaux-sociaux div:first-of-type a svg:hover, .site__footer__reseaux-sociaux div:first-of-type a svg:focus, .site__footer__reseaux-sociaux div:first-of-type a svg:active {
@@ -87,7 +87,7 @@ a:hover, a:active {
 }
 
 .site__footer__reseaux-sociaux div:nth-of-type(2) a svg {
-  color: #434c52;
+  color: white;
 }
 
 .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:hover, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:focus, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:active {
@@ -95,7 +95,7 @@ a:hover, a:active {
 }
 
 .site__footer__reseaux-sociaux div:last-of-type a svg {
-  color: #434c52;
+  color: white;
 }
 
 .site__footer__reseaux-sociaux div:last-of-type a svg:hover, .site__footer__reseaux-sociaux div:last-of-type a svg:focus, .site__footer__reseaux-sociaux div:last-of-type a svg:active {
@@ -425,13 +425,17 @@ html {
 }
 
 .site {
-  background-color: #2f2f2f;
+  background-color: #222222;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
 }
 
 .principal {
   margin: 20px;
+}
+
+h2 {
+  color: #9c2828;
 }
 
 .formation {
@@ -489,12 +493,13 @@ html {
 }
 
 .formation__cours {
-  background-color: #474747;
+  background-color: #2e2e2e;
   border: 0px solid transparent;
   display: flex;
   flex-direction: column;
   transition: 0.2s;
   height: 100%;
+  color: whitesmoke;
 }
 
 .formation__cours > * {
@@ -528,7 +533,7 @@ html {
 
 .cours__sigle {
   font-size: 1.5rem;
-  color: #3f3f3f;
+  color: #ff3c3c;
   text-shadow: 1px 1px 0px black;
 }
 
@@ -537,7 +542,8 @@ html {
 }
 
 .site__header {
-  background-color: #474747;
+  background-color: #2e2e2e;
+  color: #9c2828;
   text-align: center;
   padding-left: 19px;
   display: flex;
@@ -677,7 +683,7 @@ html {
 }
 
 .site__footer__menu__ul .menu-item:hover svg {
-  color: #474747;
+  color: #2e2e2e;
 }
 
 .site__footer .footer__titre,
@@ -765,7 +771,7 @@ html {
 
 .site__main .cours {
   box-shadow: 5px 5px #434c52;
-  background: linear-gradient(45deg, #c02727 5%, #434c52 5%, #434c52 6%, #474747 6%, #474747 94%, #434c52 94%, #434c52 95%, #c02727 95%);
+  background: linear-gradient(45deg, #c02727 5%, #434c52 5%, #434c52 6%, #2e2e2e 6%, #2e2e2e 94%, #434c52 94%, #434c52 95%, #c02727 95%);
   height: 100%;
 }
 
@@ -787,7 +793,7 @@ html {
 
 .main__frontpage h1 {
   margin: none;
-  background-color: #474747;
+  background-color: #2e2e2e;
   font-size: 4rem;
   display: flex;
   justify-content: center;
@@ -819,7 +825,7 @@ html {
   height: 100px;
   margin: 1rem;
   border-radius: 50%;
-  background-color: #474747;
+  background-color: #2e2e2e;
   font-size: 2rem;
 }
 
@@ -845,12 +851,12 @@ html {
 
 .site__header {
   grid-area: header;
-  background-color: #474747;
+  background-color: #2e2e2e;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #474747;
+  background-color: #2e2e2e;
 }
 
 .site__main {
