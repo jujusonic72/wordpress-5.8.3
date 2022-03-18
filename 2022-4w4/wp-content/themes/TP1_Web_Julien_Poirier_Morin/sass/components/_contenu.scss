@@ -12,6 +12,8 @@ h2{
 .formation {
   display: flex;
   flex-direction: column;
+  background-color: $color__background-main;
+  border-radius: 1rem;
   &__titre {
     font-size: 2rem;
     text-align: center;
@@ -50,8 +52,9 @@ h2{
     }
   }
   &__cours {
-    background-color: $color__background-barre;
+    background-color: $color__background-cours;
     border: 0px solid transparent;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     transition: 0.2s;

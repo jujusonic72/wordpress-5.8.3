@@ -441,6 +441,8 @@ h2 {
 .formation {
   display: flex;
   flex-direction: column;
+  background-color: #2e2e2e;
+  border-radius: 1rem;
 }
 
 .formation__titre {
@@ -493,8 +495,9 @@ h2 {
 }
 
 .formation__cours {
-  background-color: #2e2e2e;
+  background-color: #414141;
   border: 0px solid transparent;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   transition: 0.2s;
@@ -853,19 +856,18 @@ h2 {
 .site__header {
   grid-area: header;
   background-color: #2e2e2e;
-  border-radius: 2rem;
 }
 
 .site__barre {
   grid-area: sidebar;
   background-color: #2e2e2e;
-  border-radius: 2rem;
+  border-radius: 0 2rem 2rem 0;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #4e4e4e;
-  border-radius: 2rem;
+  background-color: #2e2e2e;
 }
 
 .site__footer {
