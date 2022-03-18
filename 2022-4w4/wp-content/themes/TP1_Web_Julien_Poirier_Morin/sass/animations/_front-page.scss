@@ -1,24 +1,42 @@
-.bloc-bleu-frontpage,
-.bloc-orange-frontpage {
-  animation: animBlocsFrontpage 5s infinite linear;
+.animation__gmail:hover{
+  flex-grow: 0.5;
+}
+.animation__gmail:hover::after{
+  flex-grow: 0.5;
 }
 
-// @keyframes animBlocsFrontpage {
-//   0%,
-//   100% {
-//     transform: translateX(unset);
-//     width: 50px;
-//   }
-//   25% {
-//     transform: translateX(250%);
-//     width: 25px;
-//   }
-//   50% {
-//     transform: translateX(500%);
-//     width: 50px;
-//   }
-//   75% {
-//     transform: translateX(250%);
-//     width: 25px;
-//   }
-// }
+.animation__github:hover{
+  flex-grow: 0.5;
+  background-color: $color__background-link-hover;
+}
+.animation__github:hover::after{
+  content: "github";
+  font-size: 2rem;
+}
+
+.animation__linkedin:hover{
+  flex-grow: 0.5;
+  background-color: $color__background-link-hover;
+}
+.animation__linkedin:hover::after{
+  content: "github";
+  font-size: 2rem;
+}
+
+.animation__reddit:hover{
+  flex-grow: 0.5;
+  background-color: $color__background-link-hover;
+}
+.animation__reddit a:hover::after{
+  content: "github";
+  font-size: 2rem;
+}
+
+.animation__portfolio:hover{
+  flex-grow: 0.5;
+  background-color: $color__background-link-hover;
+}
+.animation__portfolio:hover::after{
+  content: "github";
+  font-size: 2rem;
+}

@@ -793,6 +793,7 @@ h2 {
 
 .main__frontpage {
   position: relative;
+  padding: 2rem;
 }
 
 .main__frontpage h1 {
@@ -804,6 +805,28 @@ h2 {
   align-items: center;
   height: 400px;
   border-radius: 20px 0px 20px 0px;
+}
+
+.main__frontpage .elements__frontpage {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+}
+
+.main__frontpage .elements__frontpage div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 75px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 5px black;
+  color: #fff;
+  margin: 1rem;
 }
 
 .site__barre {
@@ -842,9 +865,52 @@ h2 {
   }
 }
 
-.bloc-bleu-frontpage,
-.bloc-orange-frontpage {
-  animation: animBlocsFrontpage 5s infinite linear;
+.animation__gmail:hover {
+  flex-grow: 0.5;
+}
+
+.animation__gmail:hover::after {
+  flex-grow: 0.5;
+}
+
+.animation__github:hover {
+  flex-grow: 0.5;
+  background-color: #292929;
+}
+
+.animation__github:hover::after {
+  content: "github";
+  font-size: 2rem;
+}
+
+.animation__linkedin:hover {
+  flex-grow: 0.5;
+  background-color: #292929;
+}
+
+.animation__linkedin:hover::after {
+  content: "github";
+  font-size: 2rem;
+}
+
+.animation__reddit:hover {
+  flex-grow: 0.5;
+  background-color: #292929;
+}
+
+.animation__reddit a:hover::after {
+  content: "github";
+  font-size: 2rem;
+}
+
+.animation__portfolio:hover {
+  flex-grow: 0.5;
+  background-color: #292929;
+}
+
+.animation__portfolio:hover::after {
+  content: "github";
+  font-size: 2rem;
 }
 
 .site {

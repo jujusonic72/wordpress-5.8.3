@@ -1,5 +1,6 @@
 .main__frontpage {
   position: relative;
+  padding: 2rem;
   h1 {
     margin: none;
     background-color: $color__background-barre;
@@ -9,5 +10,25 @@
     align-items: center;
     height: 400px;
     border-radius: 20px 0px 20px 0px;
+  }
+  & .elements__frontpage{
+    color: $color__font-footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    & div{
+      display : flex;
+        justify-content: center;
+        align-items: center;
+        width : 300px;
+        height : 75px;
+        border-radius: 5%;
+        box-shadow: 3px 3px 5px black;
+        color : #fff;
+        margin: 1rem;
+    }
   }
 }
