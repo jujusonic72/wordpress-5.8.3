@@ -1,4 +1,17 @@
 <footer class="site__footer">
+
+    <div class="site__footer__colonne">
+        <section class="footer__article">
+            <?php get_sidebar('footer_colonne_1'); ?>
+        </section>
+        <section class="footer__adresse">
+            <h2>Adresse du Collège</h2>
+            <?php get_sidebar('footer_colonne_2'); ?>
+        </section>
+        <section class="footer__liens">
+            <?php get_sidebar('footer_colonne_3'); ?>
+        </section>
+    </div>
     <section class="site__footer__presentation">
 
         <h2 class="footer__titre">Présentation</h2>

@@ -37,11 +37,13 @@ h2{
       background-color: $color__background-bloc-bleu;
       right: -20px;
       top: -40px;
+      border-radius: 1rem;
     }
     .bloc__orange {
       background-color: $color__background-bloc-orange;
       bottom: -40px;
       left: -20px;
+      border-radius: 1rem;
     }
     width: 100%;
     @media screen and (min-width: $largeur__media--tablette) {
@@ -71,10 +73,10 @@ h2{
 
   &__container:hover {
     .bloc__bleu {
-      transform: translateX(-210%);
+      transform: translateX(-100%) scaleX(210%);
     }
     .bloc__orange {
-      transform: translateX(210%);
+      transform: translateX(100%) scaleX(210%);
     }
     .formation__cours {
       box-shadow: 5px 5px $color__background-ombre;
