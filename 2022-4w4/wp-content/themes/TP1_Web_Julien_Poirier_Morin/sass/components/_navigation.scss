@@ -1,0 +1,66 @@
+#chk-burger {
+  display: none;
+}
+#burger {
+  position: fixed;
+  z-index: 2;
+  transition: transform 0.2s;
+  transform: rotate(0);
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+.menu-principal-container {
+  display: none;
+}
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+  transform: scale(1, 0);
+  animation: animationOverlay 0.5s forwards;
+}
+.site__barre {
+  background-color: transparent;
+}
+.menu {
+  list-style-type: none;
+  padding: 0;
+  &-item {
+    margin: 0;
+    padding: 0px;
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: 0.3s;
+      background: linear-gradient(
+        to left,
+        $color__background-bloc-bleu 50%,
+        transparent 50%
+      );
+      background-size: 200% 200%;
+      background-position: 0% 0%;
+      &:hover {
+        box-shadow: 0px 1px 0px 5px $color__background-ombre;
+        background-position: 20% 0%;
+      }
+    }
+  }
+}
+@media screen and (min-width: $largeur__media--tablette) {
+  .menu-principal-container {
+    display: block;
+  }
+  #burger {
+    display: none;
+  }
+}
+@keyframes animationOverlay {
+  from {
+    transform: scale(1, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}

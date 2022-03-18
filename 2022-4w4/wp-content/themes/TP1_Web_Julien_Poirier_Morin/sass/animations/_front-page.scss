@@ -1,0 +1,24 @@
+.bloc-bleu-frontpage,
+.bloc-orange-frontpage {
+  animation: animBlocsFrontpage 5s infinite linear;
+}
+
+// @keyframes animBlocsFrontpage {
+//   0%,
+//   100% {
+//     transform: translateX(unset);
+//     width: 50px;
+//   }
+//   25% {
+//     transform: translateX(250%);
+//     width: 25px;
+//   }
+//   50% {
+//     transform: translateX(500%);
+//     width: 50px;
+//   }
+//   75% {
+//     transform: translateX(250%);
+//     width: 25px;
+//   }
+// }

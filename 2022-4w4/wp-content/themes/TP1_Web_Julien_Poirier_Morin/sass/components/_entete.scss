@@ -1,0 +1,68 @@
+.site__header {
+  background-color: $color__background-header;
+  text-align: center;
+  padding-left: 19px;
+  display: flex;
+  flex-flow: column;
+  // align-items: center;
+  @media screen and (min-width: $largeur__media--tablette) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__titre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h1 {
+      font-size: clamp(2rem, 3vw, 7rem);
+      font-family: $font__header;
+    }
+
+    h2 {
+      font-size: clamp(1rem, 2vw, 4rem);
+      margin: 0 0 0 2rem;
+    }
+  }
+  &__util {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    @media screen and (min-width: $largeur__media--tablette) {
+      width: 50%;
+    }
+  }
+}
+.icone {
+  display: flex;
+  flex-grow: 1;
+}
+.recherche {
+  flex-grow: 2;
+  width: 100%;
+  position: relative;
+  ::placeholder {
+    color: black;
+  }
+  &__input {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  &__bouton {
+    background-color: transparent;
+    position: absolute;
+    top: 0.35rem;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    padding: 0rem;
+  }
+}

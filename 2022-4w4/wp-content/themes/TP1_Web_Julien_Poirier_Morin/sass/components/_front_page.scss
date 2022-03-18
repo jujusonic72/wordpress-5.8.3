@@ -1,0 +1,13 @@
+.main__frontpage {
+  position: relative;
+  h1 {
+    margin: none;
+    background-color: $color__background-barre;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border-radius: 20px 0px 20px 0px;
+  }
+}

@@ -1,0 +1,75 @@
+@mixin links($couleur, $couleur--visited, $couleur--hover) {
+  color: $couleur;
+
+  &:visited {
+    color: $couleur--visited;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $couleur--hover;
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+@mixin svgLinks($couleur, $couleur--hover) {
+  svg {
+    color: $couleur;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $couleur--hover;
+    }
+  }
+}
+a {
+  @include links($color__link, $color__link-visited, $color__link);
+}
+
+.site__footer a {
+  @include links(
+    $color__link__footer,
+    $color__link__footer-visited,
+    $color__link__footer-hover
+  );
+}
+.site__header__titre a {
+  text-decoration: none;
+  @include links(
+    $color__link__header,
+    $color__link__header-visited,
+    $color__link__header-hover
+  );
+}
+
+.site__header__util .icone a {
+  @include svgLinks($color__link__header, $color__link__header-hover);
+}
+
+.site__footer__reseaux-sociaux {
+  div:first-of-type {
+    a {
+      @include svgLinks($color__background-ombre, red);
+    }
+  }
+  div:nth-of-type(2) {
+    a {
+      @include svgLinks($color__background-ombre, blue);
+    }
+  }
+  div:last-of-type {
+    a {
+      @include svgLinks($color__background-ombre, rgb(0, 153, 255));
+    }
+  }
+}

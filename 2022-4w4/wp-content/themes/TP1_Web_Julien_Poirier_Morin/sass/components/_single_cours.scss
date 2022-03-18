@@ -1,0 +1,28 @@
+.site__main {
+  z-index: -2;
+  margin: 1rem 1rem 2rem 1rem;
+  .cours {
+    box-shadow: 5px 5px $color__background-ombre;
+    background: linear-gradient(
+      45deg,
+      $color__background-bloc-bleu 5%,
+      $color__background-ombre 5%,
+      $color__background-ombre 6%,
+      $color__background-barre 6%,
+      $color__background-barre 94%,
+      $color__background-ombre 94%,
+      $color__background-ombre 95%,
+      $color__background-bloc-orange 95%
+    );
+    height: 100%;
+    &__titre {
+      padding: 2rem;
+    }
+    img {
+      margin: 0rem 0rem 0rem 2rem;
+    }
+    &__contenu {
+      padding: 0rem 2rem 3rem 2rem;
+    }
+  }
+}
