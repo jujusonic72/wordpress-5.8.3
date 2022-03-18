@@ -21,7 +21,9 @@
 }
 .site__barre {
   background-color: transparent;
+  animation: anim-entete 1s ease-out forwards;
 }
+
 .menu {
   list-style-type: none;
   padding: 0;

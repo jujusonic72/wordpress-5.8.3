@@ -1,0 +1,24 @@
+.site__erreur{
+    animation: anim-erreur linear 2s infinite;
+    & div{
+        animation: anim-lettres-erreur 2s linear infinite;
+    }
+}
+
+@keyframes anim-erreur {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anim-lettres-erreur {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

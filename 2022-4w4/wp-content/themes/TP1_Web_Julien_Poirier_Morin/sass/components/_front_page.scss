@@ -29,6 +29,20 @@
         box-shadow: 3px 3px 5px black;
         color : #fff;
         margin: 1rem;
+        z-index: 2;
+        & a{
+          z-index: 10;
+        }
     }
+  }
+  .conteneur__frontpage-img{
+    height: 250px;
+    .image__frontpage{
+      height: 100px;
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
   }
 }

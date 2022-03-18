@@ -50,3 +50,60 @@ function get_excerpt_trim($num_words, $more)
     $excerpt = wp_trim_words($excerpt, $num_words, $more);
     return $excerpt;
 }
+
+/* ---------------------------------------------------------------------- Enregistrer des sidebars */
+
+add_action( "widgets_init", "my_register_sidebars");
+
+function my_register_sidebars() {
+ 
+    register_sidebar( array(
+        'id'            => 'footer_colonne_1',
+        'name'          => __('Footer colonne 1'),
+        'description'   => __('Ce sidebar s\'affiche dans une colonne du pied de page'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'id'            => 'footer_colonne_2',
+        'name'          => __('Footer colonne 2'),
+        'description'   => __('Ce sidebar s\'affiche dans une colonne du pied de page'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'id'            => 'footer_colonne_3',
+        'name'          => __('Footer colonne 3'),
+        'description'   => __('Ce sidebar s\'affiche dans une colonne du pied de page'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'id'            => 'footer_ligne_1',
+        'name'          => __('Footer ligne 1'),
+        'description'   => __('Ce sidebar s\'affiche dans une ligne du pied de page'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'id'            => 'footer_ligne_2',
+        'name'          => __('Footer ligne 2'),
+        'description'   => __('Ce sidebar s\'affiche dans une ligne du pied de page'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+}

@@ -9,99 +9,6 @@ Liscense : GNU General Public License v2 or later
 License URI : LICENSE
 Text Domain : cidw-4w4
 */
-a {
-  color: #ff3c3c;
-}
-
-a:visited {
-  color: #ff3c3c;
-}
-
-a:hover, a:focus, a:active {
-  color: #ff3c3c;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover, a:active {
-  outline: 0;
-}
-
-.site__footer a {
-  color: white;
-}
-
-.site__footer a:visited {
-  color: white;
-}
-
-.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #3f3f3f;
-}
-
-.site__footer a:focus {
-  outline: thin dotted;
-}
-
-.site__footer a:hover, .site__footer a:active {
-  outline: 0;
-}
-
-.site__header__titre a {
-  text-decoration: none;
-  color: white;
-}
-
-.site__header__titre a:visited {
-  color: white;
-}
-
-.site__header__titre a:hover, .site__header__titre a:focus, .site__header__titre a:active {
-  color: #c02727;
-}
-
-.site__header__titre a:focus {
-  outline: thin dotted;
-}
-
-.site__header__titre a:hover, .site__header__titre a:active {
-  outline: 0;
-}
-
-.site__header__util .icone a svg {
-  color: white;
-}
-
-.site__header__util .icone a svg:hover, .site__header__util .icone a svg:focus, .site__header__util .icone a svg:active {
-  color: #c02727;
-}
-
-.site__footer__reseaux-sociaux div:first-of-type a svg {
-  color: white;
-}
-
-.site__footer__reseaux-sociaux div:first-of-type a svg:hover, .site__footer__reseaux-sociaux div:first-of-type a svg:focus, .site__footer__reseaux-sociaux div:first-of-type a svg:active {
-  color: red;
-}
-
-.site__footer__reseaux-sociaux div:nth-of-type(2) a svg {
-  color: white;
-}
-
-.site__footer__reseaux-sociaux div:nth-of-type(2) a svg:hover, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:focus, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:active {
-  color: blue;
-}
-
-.site__footer__reseaux-sociaux div:last-of-type a svg {
-  color: white;
-}
-
-.site__footer__reseaux-sociaux div:last-of-type a svg:hover, .site__footer__reseaux-sociaux div:last-of-type a svg:focus, .site__footer__reseaux-sociaux div:last-of-type a svg:active {
-  color: #0099ff;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 	 ========================================================================== */
@@ -424,6 +331,99 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  color: #ff3c3c;
+}
+
+a:visited {
+  color: #ff3c3c;
+}
+
+a:hover, a:focus, a:active {
+  color: #ff3c3c;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+.site__footer a {
+  color: white;
+}
+
+.site__footer a:visited {
+  color: white;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: #3f3f3f;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
+  outline: 0;
+}
+
+.site__header__titre a {
+  text-decoration: none;
+  color: white;
+}
+
+.site__header__titre a:visited {
+  color: white;
+}
+
+.site__header__titre a:hover, .site__header__titre a:focus, .site__header__titre a:active {
+  color: #c02727;
+}
+
+.site__header__titre a:focus {
+  outline: thin dotted;
+}
+
+.site__header__titre a:hover, .site__header__titre a:active {
+  outline: 0;
+}
+
+.site__header__util .icone a svg {
+  color: white;
+}
+
+.site__header__util .icone a svg:hover, .site__header__util .icone a svg:focus, .site__header__util .icone a svg:active {
+  color: #c02727;
+}
+
+.site__footer__reseaux-sociaux div:first-of-type a svg {
+  color: white;
+}
+
+.site__footer__reseaux-sociaux div:first-of-type a svg:hover, .site__footer__reseaux-sociaux div:first-of-type a svg:focus, .site__footer__reseaux-sociaux div:first-of-type a svg:active {
+  color: red;
+}
+
+.site__footer__reseaux-sociaux div:nth-of-type(2) a svg {
+  color: white;
+}
+
+.site__footer__reseaux-sociaux div:nth-of-type(2) a svg:hover, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:focus, .site__footer__reseaux-sociaux div:nth-of-type(2) a svg:active {
+  color: blue;
+}
+
+.site__footer__reseaux-sociaux div:last-of-type a svg {
+  color: white;
+}
+
+.site__footer__reseaux-sociaux div:last-of-type a svg:hover, .site__footer__reseaux-sociaux div:last-of-type a svg:focus, .site__footer__reseaux-sociaux div:last-of-type a svg:active {
+  color: #0099ff;
+}
+
 .site {
   background-color: #222222;
   font-family: Arial, Helvetica, sans-serif;
@@ -724,6 +724,7 @@ h2 {
 
 .site__barre {
   background-color: transparent;
+  animation: anim-entete 1s ease-out forwards;
 }
 
 .menu {
@@ -830,6 +831,22 @@ h2 {
   box-shadow: 3px 3px 5px black;
   color: #fff;
   margin: 1rem;
+  z-index: 2;
+}
+
+.main__frontpage .elements__frontpage div a {
+  z-index: 10;
+}
+
+.main__frontpage .conteneur__frontpage-img {
+  height: 250px;
+}
+
+.main__frontpage .conteneur__frontpage-img .image__frontpage {
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site__barre {
@@ -841,79 +858,126 @@ h2 {
   align-items: center;
 }
 
-.animation {
-  display: flex;
-  justify-content: space-around;
+.site__main-erreur {
+  text-align: center;
 }
 
-.animation__bloc {
-  animation: anim-entete 1s forwards;
+.site__erreur {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background-color: red;
+  border: solid black 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  width: 100px;
-  height: 100px;
-  margin: 1rem;
-  border-radius: 50%;
-  background-color: #2e2e2e;
-  font-size: 2rem;
+  justify-content: center;
+}
+
+.site__erreur div {
+  font-size: 7rem;
+  font-weight: bolder;
+}
+
+.icone__lien:nth-of-type(5) {
+  display: flex;
+  animation: anim-entete 1s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.icone__lien:nth-of-type(4) {
+  display: flex;
+  animation: anim-entete 1s forwards;
+  animation-delay: 0.25s;
+  animation-timing-function: ease-in-out;
+}
+
+.icone__lien:nth-of-type(3) {
+  display: flex;
+  animation: anim-entete 1s forwards;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.icone__lien:nth-of-type(2) {
+  display: flex;
+  animation: anim-entete 1s forwards;
+  animation-delay: 0.75s;
+  animation-timing-function: ease-in-out;
+}
+
+.icone__lien:nth-of-type(1) {
+  display: flex;
+  animation: anim-entete 1s forwards;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes anim-entete {
   0% {
-    transform: translateY(-100vh);
+    transform: translateX(-100vw);
+  }
+  50% {
+    transform: translateX(0vw);
+  }
+  75% {
+    transform: translateX(-3vw);
   }
   100% {
-    transform: translateY(0vh);
+    transform: translateX(0vw);
   }
 }
 
-.animation__gmail:hover {
-  flex-grow: 0.5;
+.image__frontpage {
+  height: 100px;
+  width: 100px;
+  animation: animFrontpage 5s ease-in-out infinite;
 }
 
-.animation__gmail:hover::after {
-  flex-grow: 0.5;
+@keyframes animFrontpage {
+  0% {
+    transform: translateX(-15vw);
+  }
+  25% {
+    transform: translateX(15vw);
+  }
+  50% {
+    transform: translateX(0vw) translateY(5vh);
+  }
+  75% {
+    transform: translateX(0vw) translateY(-5vh);
+  }
+  100% {
+    transform: translateX(0vw) translateY(0vh);
+  }
 }
 
-.animation__github:hover {
-  flex-grow: 0.5;
-  background-color: #292929;
+.site__erreur {
+  animation: anim-erreur linear 2s infinite;
 }
 
-.animation__github:hover::after {
-  content: "github";
-  font-size: 2rem;
+.site__erreur div {
+  animation: anim-lettres-erreur 2s linear infinite;
 }
 
-.animation__linkedin:hover {
-  flex-grow: 0.5;
-  background-color: #292929;
+@keyframes anim-erreur {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.animation__linkedin:hover::after {
-  content: "github";
-  font-size: 2rem;
-}
-
-.animation__reddit:hover {
-  flex-grow: 0.5;
-  background-color: #292929;
-}
-
-.animation__reddit a:hover::after {
-  content: "github";
-  font-size: 2rem;
-}
-
-.animation__portfolio:hover {
-  flex-grow: 0.5;
-  background-color: #292929;
-}
-
-.animation__portfolio:hover::after {
-  content: "github";
-  font-size: 2rem;
+@keyframes anim-lettres-erreur {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .site {

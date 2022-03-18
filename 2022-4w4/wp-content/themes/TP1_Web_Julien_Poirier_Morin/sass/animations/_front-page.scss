@@ -1,42 +1,22 @@
-.animation__gmail:hover{
-  flex-grow: 0.5;
+.image__frontpage{
+  height: 100px;
+  width: 100px;
+  animation: animFrontpage 5s ease-in-out infinite;
 }
-.animation__gmail:hover::after{
-  flex-grow: 0.5;
-}
-
-.animation__github:hover{
-  flex-grow: 0.5;
-  background-color: $color__background-link-hover;
-}
-.animation__github:hover::after{
-  content: "github";
-  font-size: 2rem;
-}
-
-.animation__linkedin:hover{
-  flex-grow: 0.5;
-  background-color: $color__background-link-hover;
-}
-.animation__linkedin:hover::after{
-  content: "github";
-  font-size: 2rem;
-}
-
-.animation__reddit:hover{
-  flex-grow: 0.5;
-  background-color: $color__background-link-hover;
-}
-.animation__reddit a:hover::after{
-  content: "github";
-  font-size: 2rem;
-}
-
-.animation__portfolio:hover{
-  flex-grow: 0.5;
-  background-color: $color__background-link-hover;
-}
-.animation__portfolio:hover::after{
-  content: "github";
-  font-size: 2rem;
+@keyframes animFrontpage {
+  0%{
+    transform: translateX(-15vw);
+  }
+  25%{
+    transform: translateX(15vw);
+  }
+  50%{
+    transform: translateX(0vw) translateY(5vh);
+  }
+  75%{
+    transform: translateX(0vw) translateY(-5vh);
+  }
+  100%{
+    transform: translateX(0vw) translateY(0vh);
+  }
 }

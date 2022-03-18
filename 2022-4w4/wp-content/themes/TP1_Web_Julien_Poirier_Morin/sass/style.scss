@@ -12,12 +12,14 @@ Text Domain : cidw-4w4
 //Variables
 @import "variables/variables";
 
-//Elements
-@import "elements/links";
-
 //Initialisation
 @import "init/normalize";
 @import "init/box-sizing";
+
+//Elements
+@import "elements/links";
+
+
 
 //Components
 @import "components/components";
