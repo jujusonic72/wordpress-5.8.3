@@ -435,7 +435,7 @@ html {
 }
 
 h2 {
-  color: #9c2828;
+  color: #e02828;
 }
 
 .formation {
@@ -543,7 +543,7 @@ h2 {
 
 .site__header {
   background-color: #2e2e2e;
-  color: #9c2828;
+  color: #b82d2d;
   text-align: center;
   padding-left: 19px;
   display: flex;
@@ -630,7 +630,7 @@ h2 {
   flex-flow: column;
   justify-content: space-between;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #474747;
+  background-color: #2e2e2e;
   color: white;
   padding: 1rem;
 }
@@ -749,6 +749,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .menu-principal-container {
     display: block;
+    margin: 0 1rem 1rem 1rem;
   }
   #burger {
     display: none;
@@ -852,21 +853,24 @@ h2 {
 .site__header {
   grid-area: header;
   background-color: #2e2e2e;
+  border-radius: 2rem;
 }
 
 .site__barre {
   grid-area: sidebar;
   background-color: #2e2e2e;
+  border-radius: 2rem;
 }
 
 .site__main {
   grid-area: main;
   background-color: #4e4e4e;
+  border-radius: 2rem;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #474747;
+  background-color: #2e2e2e;
 }
 
 @media screen and (min-width: 768px) {

@@ -5,14 +5,14 @@
     box-shadow: 5px 5px $color__background-ombre;
     background: linear-gradient(
       45deg,
-      $color__background-bloc-haut 5%,
+      $color__background-bloc-bleu 5%,
       $color__background-ombre 5%,
       $color__background-ombre 6%,
       $color__background-barre 6%,
       $color__background-barre 94%,
       $color__background-ombre 94%,
       $color__background-ombre 95%,
-      $color__background-bloc-bas 95%
+      $color__background-bloc-orange 95%
     );
     height: 100%;
     &__titre {
