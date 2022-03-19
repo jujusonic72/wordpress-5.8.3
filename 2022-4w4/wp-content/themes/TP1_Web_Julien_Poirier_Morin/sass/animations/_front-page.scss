@@ -1,22 +1,25 @@
+.conteneur__frontpage-img{
+  animation: anim-frontpage 6s linear infinite;
 .image__frontpage{
   height: 100px;
   width: 100px;
-  animation: animFrontpage 5s ease-in-out infinite;
+  animation: anim-img-frontpage 6s linear infinite;
 }
-@keyframes animFrontpage {
+}
+@keyframes anim-frontpage {
   0%{
-    transform: translateX(-15vw);
+      transform: rotate(0);
   }
-  25%{
-    transform: translateX(15vw);
+
+  100%{
+      transform: rotate(360deg);
   }
-  50%{
-    transform: translateX(0vw) translateY(5vh);
-  }
-  75%{
-    transform: translateX(0vw) translateY(-5vh);
+}
+@keyframes anim-img-frontpage {
+  0%{
+      transform: rotate(0);
   }
   100%{
-    transform: translateX(0vw) translateY(0vh);
+      transform: rotate(-360deg);
   }
 }

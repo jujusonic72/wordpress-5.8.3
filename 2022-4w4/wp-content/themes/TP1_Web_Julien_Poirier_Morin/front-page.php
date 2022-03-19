@@ -4,7 +4,12 @@
 
         <h2>Page d'Accueil</h2>
         <div class="conteneur__frontpage-img">
-        <img src="../TP1_Web_Julien_Poirier_Morin/image-frontpage.png" alt="" class="image__frontpage">
+        <img src=".david.jpg" alt="" class="image__frontpage">
+        <img src=".camille.jpg" alt="" class="image__frontpage">
+        <img src=".vahik.jpg" alt="" class="image__frontpage">
+        <img src=".mathieu.jpg" alt="" class="image__frontpage">
+        <img src=".dominique.jpg" alt="" class="image__frontpage">
+
         </div>
         <!-- <div class="elements__frontpage">
             <div class="animation__gmail">

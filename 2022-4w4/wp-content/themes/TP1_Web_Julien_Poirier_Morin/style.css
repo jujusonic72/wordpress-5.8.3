@@ -630,20 +630,15 @@ h2 {
 }
 
 .site__footer {
-  width: 100%;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
   flex-flow: column;
   justify-content: space-between;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #2e2e2e;
   color: white;
   padding: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .site__footer {
-    flex-flow: row;
-  }
 }
 
 .site__footer > section {
@@ -694,6 +689,22 @@ h2 {
 .site__footer .footer__titre,
 .site__footer .footer__presentation,
 .site__footer .footer__author {
+  text-align: center;
+}
+
+.site__footer__colonne {
+  display: flex;
+  flex-direction: row;
+}
+
+.site__footer__colonne section {
+  margin: 1rem;
+  display: block;
+}
+
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -839,12 +850,21 @@ h2 {
 }
 
 .main__frontpage .conteneur__frontpage-img {
-  height: 250px;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  height: 40vw;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .main__frontpage .conteneur__frontpage-img .image__frontpage {
-  height: 100px;
-  width: 100px;
+  height: 7vw;
+  width: 7vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -930,27 +950,31 @@ h2 {
   }
 }
 
-.image__frontpage {
-  height: 100px;
-  width: 100px;
-  animation: animFrontpage 5s ease-in-out infinite;
+.conteneur__frontpage-img {
+  animation: anim-frontpage 6s linear infinite;
 }
 
-@keyframes animFrontpage {
+.conteneur__frontpage-img .image__frontpage {
+  height: 100px;
+  width: 100px;
+  animation: anim-img-frontpage 6s linear infinite;
+}
+
+@keyframes anim-frontpage {
   0% {
-    transform: translateX(-15vw);
-  }
-  25% {
-    transform: translateX(15vw);
-  }
-  50% {
-    transform: translateX(0vw) translateY(5vh);
-  }
-  75% {
-    transform: translateX(0vw) translateY(-5vh);
+    transform: rotate(0);
   }
   100% {
-    transform: translateX(0vw) translateY(0vh);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anim-img-frontpage {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 

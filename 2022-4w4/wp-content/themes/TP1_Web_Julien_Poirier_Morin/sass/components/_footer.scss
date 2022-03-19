@@ -1,10 +1,9 @@
 .site__footer {
-  width: 100%;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
   flex-flow: column;
-  @media screen and (min-width: $largeur__media--tablette) {
-    flex-flow: row;
-  }
+  
   justify-content: space-between;
   font-family: $font__header;
   background-color: $color__background-footer;
@@ -59,4 +58,17 @@
   .footer__author {
     text-align: center;
   }
+}
+.site__footer__colonne{
+  display: flex;
+  flex-direction: row;
+  & section{
+    margin: 1rem;
+    display: block;
+  }
+}
+.site__footer__ligne{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
