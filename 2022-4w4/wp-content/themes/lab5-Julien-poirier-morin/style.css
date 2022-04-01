@@ -352,11 +352,11 @@ html {
 /* -----------------------------------*/
 a {
   text-decoration: none;
-  color: black;
+  color: #b30000;
 }
 
 a:visited {
-  color: black;
+  color: #b30000;
 }
 
 a:hover, a:focus, a:active {
@@ -679,12 +679,12 @@ COMPOSANTES
 }
 
 #burger svg {
-  background-color: #39d89d;
+  background-color: #5c0a0a;
   border-radius: 50%;
 }
 
 #burger svg:hover {
-  background-color: #2da378;
+  background-color: #c20303;
 }
 
 #chk-burger {
@@ -855,8 +855,8 @@ COMPOSANTES
   margin-top: 0rem;
   padding: 0.5rem 5rem 0.5rem 0;
   border-right: 5px solid black;
-  border-top: 1px solid #39d89d;
-  border-bottom: 1px solid #39d89d;
+  border-top: 1px solid #641414;
+  border-bottom: 1px solid #641414;
   border-radius: 5px;
 }
 
@@ -877,7 +877,7 @@ COMPOSANTES
 .recherche__input {
   flex: 1;
   width: 100%;
-  background-color: rgba(57, 216, 157, 0.1);
+  background-color: rgba(121, 9, 9, 0.1);
   transition: all 0.3s;
   border: none;
   outline: none;
@@ -888,7 +888,7 @@ COMPOSANTES
 }
 
 .recherche__bouton {
-  background-color: #39d89d;
+  background-color: #790909;
   height: 100%;
   position: absolute;
   right: 0;
@@ -917,7 +917,7 @@ COMPOSANTES
   justify-content: center;
   margin: 0.5rem;
   padding: 0.5rem;
-  border: 1px solid black;
+  border: 1px solid #b30000;
   border-radius: 0.5rem;
   background-color: white;
   color: #000;
@@ -926,7 +926,7 @@ COMPOSANTES
 }
 
 .menu-categorie-cours-container .menu .menu-item a:hover {
-  background-color: black;
+  background-color: #b30000;
   color: white;
 }
 
@@ -949,7 +949,7 @@ ANIMATION
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #39d89d;
+  background-color: #641414;
   box-shadow: 5px 5px white;
   color: #fff;
   font-size: 3rem;
@@ -1008,7 +1008,7 @@ LAYOUT
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #39d89d;
+  background-color: #790909;
 }
 
 .site__main {
