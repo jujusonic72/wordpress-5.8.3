@@ -2,7 +2,7 @@
 <main class="site__main">
 
     <section class="animation">
-        <a target="_blank" href="https://github.com/JeromeTrottier">
+        <a target="_blank" href="https://github.com/jujusonic72">
             <div class="animation__bloc">
                 <svg width="50" height="50" role="img" viewBox="0 0 24 24" fill="currentColor" color="#000" xmlns="http://www.w3.org/2000/svg">
                     <title>GitHub icon</title>
@@ -10,7 +10,7 @@
                 </svg>
             </div>
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/jerometrottier/">
+        <a target="_blank" href="https://www.linkedin.com/in/julien-poirier-morin-367a28209">
             <div class="animation__bloc">
 
                 <svg width="50" height="50" role="img" viewBox="0 0 24 24" fill="currentColor" color="#000" xmlns="http://www.w3.org/2000/svg">

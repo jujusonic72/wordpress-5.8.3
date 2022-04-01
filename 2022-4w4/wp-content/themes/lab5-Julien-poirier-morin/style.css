@@ -519,7 +519,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: black;
+  color: #c8ca4f;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -581,7 +581,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: black;
+  color: #c8ca4f;
   margin: 5px 0px;
 }
 
@@ -710,12 +710,12 @@ COMPOSANTES
 }
 
 .home .menu-principal-container {
-  background-color: #39d89d;
+  background-color: #4b1212;
   padding: 30px 0 0 0;
 }
 
 .site .menu-principal-container {
-  background-color: #39d89d;
+  background-color: #4b1212;
   padding: 30px 0 0 0;
 }
 
@@ -755,7 +755,7 @@ COMPOSANTES
     display: block;
   }
   .home .menu-principal-container {
-    background-color: #39d89d;
+    background-color: #4b1212;
     display: block;
     padding: 30px 0 0 0;
     position: absolute;
@@ -834,7 +834,7 @@ COMPOSANTES
 
 .single-post .site__main {
   border: 1px solid black;
-  background-color: #fcc704;
+  background-color: #101122;
 }
 
 .single-post .site__main .cours {
@@ -993,12 +993,12 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #fcc704;
+  background-color: #13191d;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .home {
-  background: linear-gradient(110deg, #fcc704 70%, #042a45 70%);
+  background: linear-gradient(110deg, #13191d 70%, #042a45 70%);
 }
 
 .site__header {
@@ -1024,17 +1024,17 @@ LAYOUT
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
   .home {
     grid-template-columns: auto;
-    grid-template-areas: "sidebar" "header" "main" "footer";
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
