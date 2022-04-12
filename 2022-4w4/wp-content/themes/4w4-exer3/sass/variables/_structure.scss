@@ -1,0 +1,6 @@
+// Points de rupture pour les médias queries
+$largeur__media-tablette: 600px;
+$largeur__media-desktop: 1000px;
+
+// Layout général
+$size__site-sidebar: clamp(200px, 30vw, 350px);

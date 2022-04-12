@@ -1,0 +1,58 @@
+$sombre: rgb(24, 24, 24);
+$clair: rgb(228, 228, 228);
+$alternative: gray;
+$accents: rgb(255, 162, 0);
+
+$ombre-petite: 2.5px 2.5px 5px rgba(0, 0, 0, .5);
+
+/* --- Éléments principaux --- */
+/* Site */
+$clr-fond__select: $accents;
+$clr-text__select: $clair;
+
+/* Header */
+$clr-fond__hdr: $sombre;
+$clr-titre__hdr: $accents;
+$clr-texte__hdr: $clair;
+
+$clr-lien__hdr: $accents;
+$clr-lien-hover__hdr: $clair;
+$clr-lien-visite__hdr: $accents;
+
+/* Footer */
+$clr-fond__ftr: $sombre;
+$clr-texte__ftr: $clair;
+$clr-titre__ftr: $accents;
+$clr-lien__ftr: $clair;
+$clr-lien-visite__ftr: $alternative;
+$clr-lien-hover__ftr: $accents;
+
+$clr-fond__ftr-cln: $clair;
+$clr-texte__ftr-cln: $sombre;
+$clr-titre__ftr-cln: $accents;
+$clr-lien__ftr-cln: $sombre;
+$clr-lien-visite__ftr-cln: $alternative;
+$clr-lien-hover__ftr-cln: $accents;
+
+/* Navigation */
+$clr-fond__nav: $clair;
+$clr-lien__nav: $sombre;
+$clr-lien-visite__nav: $alternative;
+$clr-lien-hover__nav: $accents;
+
+/* Main */
+$clr-fond__main: $clair;
+$clr-texte__main: $sombre;
+$clr-titre__main: $sombre;
+$clr-lien__main: $sombre;
+$clr-lien-visite__main: $alternative;
+$clr-lien-hover__main: $accents;
+
+/* --- Éléments de contenu --- */
+/* Carte */
+$clr-fond__crt: $clair;
+$clr-texte__crt: $sombre;
+$clr-titre__crt: $sombre;
+$clr-lien__crt: $sombre;
+$clr-lien-visite__crt: $alternative;
+$clr-lien-hover__crt: $accents;

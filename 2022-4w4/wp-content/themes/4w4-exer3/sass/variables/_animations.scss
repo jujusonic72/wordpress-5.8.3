@@ -1,0 +1,66 @@
+/**
+ * Animations globales
+ */
+@keyframes brasser {
+    0% { transform: translate(.5px, .5px) rotate(0deg); }
+    10% { transform: translate(-.5px, -1px) rotate(-.5deg); }
+    20% { transform: translate(-1.5px, 0px) rotate(.5deg); }
+    30% { transform: translate(1.5px, 1px) rotate(0deg); }
+    40% { transform: translate(.5px, -.5px) rotate(.5deg); }
+    50% { transform: translate(-.5px, 1px) rotate(-.5deg); }
+    60% { transform: translate(-1.5px, .5px) rotate(0deg); }
+    70% { transform: translate(1.5px, .5px) rotate(-.5deg); }
+    80% { transform: translate(-.5px, -.5px) rotate(.5deg); }
+    90% { transform: translate(.5px, 1px) rotate(0deg); }
+    100% { transform: translate(.5px, -1px) rotate(-.5deg); }
+}
+
+@keyframes hover-ombre {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, .5);
+    }
+}
+
+@mixin hover-ombre__rapide {
+    &:hover {animation: hover-ombre .5s forwards;}
+}
+
+@keyframes changer-couleur__clair {
+    from {color: $clair}
+    to {color: $accents}
+}
+
+@keyframes changer-couleur__sombre {
+    from {color: $sombre}
+    to {color: $accents}
+}
+
+/**
+ * Animations spécifiques
+ */
+@keyframes glisser-arrivee__hdr {
+    0% {
+        transform: translateX(-125%);
+    }
+
+    50% {
+        transform: translateX(10%);
+    }
+
+    75% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

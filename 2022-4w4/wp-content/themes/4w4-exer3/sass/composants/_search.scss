@@ -1,0 +1,37 @@
+.resultats-recherche {
+    display: flex;
+    flex-wrap: wrap;
+
+    .resultat-recherche {
+        padding: 3em;
+        width: 100%;
+
+        &:not(:last-child) {
+            border-bottom: 2px solid $sombre;
+        }
+
+        @media screen and (min-width: $largeur__media-tablette) {
+            width: 50%;
+            &:not(:nth-last-child(-n+2)) {
+                border-bottom: 2px solid $sombre;
+            }
+        }
+
+        @media screen and (min-width: $largeur__media-desktop) {
+            width: 33%;
+            &:not(:nth-last-child(-n+3)) {
+                border-bottom: 2px solid $sombre;
+            }
+        }
+    
+        &__titre {
+            font-size: 2em;
+            display: inline;
+        }
+    
+        &__contenu {
+            line-height: 1.5;
+            margin-left: 10px;
+        }
+    }
+}

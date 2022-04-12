@@ -1,0 +1,25 @@
+.site__barre {
+    @include theme(
+        $clr-fond__nav,
+        unset,
+        unset,
+        $clr-lien__nav,
+        $clr-lien-visite__nav,
+        $clr-lien-hover__nav
+    );
+    
+    height: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & nav {
+        padding: 20px;
+    }
+
+    #site__barre__menu-principal-container-checkbox:checked ~ nav.menu-principal-container {
+        transform: translateY(0);
+        transition: transform .5s ease-in-out;
+    }
+}

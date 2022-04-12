@@ -1,0 +1,16 @@
+.home__menu {
+    .menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+
+        .menu-item {
+            width: 100%;
+            a {
+                .menu-item-description {
+                    
+                }
+            }
+        }
+    }
+}

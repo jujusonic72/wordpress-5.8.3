@@ -1,0 +1,116 @@
+.cours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__filtre {
+        display: flex;
+
+        .menu-categorie-cours-container {
+            .menu {
+                display: flex;
+                list-style-type: none;
+
+                li {
+                    a {
+                        @include etiquette(2em, $accents, $clair);
+                    }
+                }
+            }
+        }
+    }
+
+    &__conteneur {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .carte {
+            @include theme_clair;
+            @include hover-ombre__rapide;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        
+            padding: 2em;
+        
+            border: 2px solid $clr-texte__crt;
+            border-radius: 10px;
+    
+            font-size: 1em;
+        
+            /* Largeur adaptative */
+            /* Mobile */
+            width: 100%;
+        
+            /* Tablettes */
+            @media screen and (min-width: $largeur__media-tablette) {
+                width: 45%;
+            }
+        
+            /* Desktop */
+            @media screen and (min-width: $largeur__media-desktop) {
+                width: 30%;
+            }
+        
+            &:hover {
+                @include theme_sombre;
+                
+                .carte__etiquettes__sigle,
+                &__etiquettes__duree {
+                    @include etiquette(
+                        1.5em,
+                        $clr-fond__crt,
+                        $clr-texte__crt
+                    );
+                }
+            }
+        
+            &__titre {
+                padding: .5rem;
+                width: 100%;
+                font-size: 1.5rem;
+                border-radius: 5px;
+                font-weight: bold;
+                text-decoration: none;
+        
+                h3 {
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+            }
+        
+            &__etiquettes {
+                display: flex;
+                gap: 15px;
+
+                &__sigle,
+                &__duree {
+                    @include etiquette(
+                        1.5em,
+                        $clr-texte__crt,
+                        $clr-fond__crt
+                    );
+                }
+            }
+            
+            &__miniature {
+                @include filtre($clr-lien-hover__crt);
+                height: 10rem;
+                border-radius: 5px;
+                border: 2px solid $clr-texte__crt;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
