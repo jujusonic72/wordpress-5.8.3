@@ -9,17 +9,32 @@
         .menu-categorie-cours-container {
             .menu {
                 display: flex;
-                list-style-type: none;
-
-                li {
-                    a {
-                        @include etiquette(2em, $accents, $clair);
+                
+                ul{
+                    display: flex;
+                    list-style-type: none;
+                    flex-direction: row;
+                
+                    li {
+                        a {
+                            @include etiquette(2em, $accents, $clair);
+                        }
                     }
                 }
             }
         }
     }
-
+    &__filtre__menu__ul{
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+    
+        li {
+            a {
+                @include etiquette(2em, $accents, $clair);
+            }
+        }
+    }
     &__conteneur {
         display: flex;
         flex-direction: row;
