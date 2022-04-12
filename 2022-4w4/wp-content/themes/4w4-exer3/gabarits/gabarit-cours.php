@@ -16,7 +16,7 @@
                     <?= le_titre_filtre(get_the_title()); ?>
                 </h3>
                 <div class="carte__miniature">
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail("thumbnail"); ?>
                 </div>
             </a>
             
