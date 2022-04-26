@@ -22,6 +22,6 @@
     <section class="site__footer__rangee__droits">&copy; Collège de Maisonneuve - Tous droits réservés</section>
     <section class="site__footer__rangee__auteur">Thème réalisé par Julien Poirier Morin</section>
 </div>
-
+</footer>
 </body>
 </html>
