@@ -1288,6 +1288,73 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   transition: transform .5s ease-in-out;
 }
 
+.boite__modale {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 10px solid #3f5041;
+  background-color: #8baf91;
+  color: black;
+  top: 25%;
+  left: 25%;
+  z-index: 100;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.boite__modale:hover {
+  box-shadow: 0px 0px 10px grey;
+}
+
+.boite__modale__ferme {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #181818;
+  color: #0088ff;
+}
+
+.boite__modale__ferme:hover {
+  scale: 1.1;
+  background-color: #0088ff;
+  color: #181818;
+}
+
+.boite__modale__texte p {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+.boite__modale__ouvrir {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 10px solid #1b303b;
+  background-color: #1d1d1d;
+  color: whitesmoke;
+  top: 25%;
+  left: 25%;
+  z-index: 100;
+  transform: scale(1);
+}
+
+.boite__modale__ouvrir:hover {
+  box-shadow: 0px 0px 10px grey;
+}
+
+.carte__desc__full {
+  display: none;
+}
+
+.carte__desc__full figure {
+  display: none !important;
+}
+
 .erreur-404 h1 {
   font-size: 10rem;
 }
