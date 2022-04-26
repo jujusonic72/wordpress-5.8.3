@@ -128,5 +128,10 @@
         }
     }
 }
-
+.cours__desc__suite{
+    background-color: $accents;
+    &:hover{
+        background-color: $clr-lien-hover__crt;
+    }
+}
 

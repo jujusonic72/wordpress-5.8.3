@@ -803,6 +803,14 @@ h6 {
   object-fit: cover;
 }
 
+.cours__desc__suite {
+  background-color: #0088ff;
+}
+
+.cours__desc__suite:hover {
+  background-color: #0088ff;
+}
+
 .site__header {
   background-color: #e4e4e4;
   color: #181818;
