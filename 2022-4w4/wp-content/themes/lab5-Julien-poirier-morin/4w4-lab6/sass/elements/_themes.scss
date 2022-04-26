@@ -1,0 +1,38 @@
+@mixin theme($clr-fond, $clr-texte, $clr-titre, $clr-lien, $clr-lien-visite, $clr-lien-hover) {
+    background-color: $clr-fond;
+    color: $clr-texte;
+
+    h1 {
+        color: $clr-titre;
+    }
+
+    a {
+        @include lien(
+            $clr-lien,
+            $clr-lien-visite,
+            $clr-lien-hover
+        )
+    }
+}
+
+@mixin theme_clair () {
+    @include theme(
+        $clair,
+        $sombre,
+        $sombre,
+        $sombre,
+        $alternative,
+        $accents
+    )
+}
+
+@mixin theme_sombre () {
+    @include theme(
+        $sombre,
+        $clair,
+        $accents,
+        $clair,
+        $alternative,
+        $accents
+    )
+}

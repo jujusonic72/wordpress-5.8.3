@@ -1,0 +1,38 @@
+.cours {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    &__image {
+        width: 100%;
+        
+        img {
+            width: 100%;
+            height: 25em;
+            object-fit: cover;
+        }
+    }
+
+    &__titre {
+        font-size: 4em;
+    }
+
+    &__etiquettes {
+        display: flex;
+        gap: 20px;
+
+        &__sigle,
+        &__duree {
+            @include etiquette(
+                2em,
+                $sombre,
+                $clair
+            )
+        } 
+    }
+
+    &__contenu {
+        font-size: 1.5em;
+        text-align: justify; 
+    }
+}

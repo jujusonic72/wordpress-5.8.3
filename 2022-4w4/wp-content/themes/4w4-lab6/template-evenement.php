@@ -5,6 +5,7 @@
 * @package WordPress
 * @subpackage cidw-4w4
 */
+get_header();
 ?>
 
 <main class="site__main">

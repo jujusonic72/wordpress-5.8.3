@@ -1,0 +1,108 @@
+.site__footer {
+    @include theme_sombre;
+    
+    ul {
+        list-style-type: none;
+    }
+
+    & > * {
+        display: flex;
+
+        section {
+            display: flex;
+            flex: 1;
+        }
+    }
+
+    &__colonne {
+        justify-content: space-between;
+        flex-direction: row;
+
+        a {
+            @include lien(	
+                $sombre, 
+                $accents, 
+                $accents, 
+            );
+        }
+
+        // Chaque colonne
+        & > * {
+            margin: 1em;
+            padding: 1em;
+            border-radius: 10px;
+
+            @include theme_clair;
+
+            // Chaque sidebar de chaque colonne
+            & > * {
+                width: 100%;
+
+                .wp-block-image {
+                    @include filtre($clr-lien-hover__crt);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__rangee {
+        flex-direction: column;
+        align-items: center;
+
+        & > * {
+            padding: 15px;
+        }
+
+        &__desc {
+            &__titre {
+                text-align: center;
+            }
+        }
+
+        &__menu {
+            &__ul {
+                .menu-item {
+                    a {
+                        display: flex;
+                        align-items: center;
+    
+                        svg {
+                            margin-right: .5em;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__sociaux {
+            .sidebar {
+                .widget {
+                    ul {
+                        display: flex;
+                        gap: 15px;
+
+                        li {
+                            a {
+                                @include lien (
+                                    unset,
+                                    transparent,
+                                    unset
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.site__footer__rangee__menu__ul{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,51 @@
+/**
+Theme name: 2022-4w4 Exercice- 3 - Julien Poirier Morin
+Author: Julien Poirier Morin
+Author URI: https://github.com/jujusonic72
+Description: Travail pratique dans le cadre du cours 4W4
+Version: 1.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+Text Domain: cidw-4w4
+*/
+
+/* ===== INITIALISATION ===== */
+@import "initialisation/normalize";
+@import "initialisation/boxsize";
+
+/* ===== VARIABLES ===== */
+@import "variables/couleurs";
+@import "variables/structure";
+@import "variables/fonts";
+@import "variables/animations";
+
+/* ===== ELEMENTS ===== */
+@import "elements/liens";
+@import "elements/boutons";
+@import "elements/etiquettes";
+@import "elements/filtres";
+@import "elements/balises";
+@import "elements/menu";
+
+@import "elements/themes";
+
+/* ===== LAYOUT ===== */
+@import "layout/_layout";
+
+/* ===== COMPOSANTS ===== */
+@import "composants/cours";
+@import "composants/header";
+@import "composants/footer"; 
+@import "composants/navigation";
+@import "composants/barre";
+@import "composants/boite_modale";
+@import "composants/404";
+@import "composants/single-post";
+@import "composants/recherche";
+@import "composants/search";
+@import "composants/navigation_accueil";
+
+/* ===== GLOBAL ===== */ 
+body {
+    font-family: Helvetica, sans-serif;;
+}

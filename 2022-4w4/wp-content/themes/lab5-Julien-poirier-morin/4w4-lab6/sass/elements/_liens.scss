@@ -1,0 +1,34 @@
+@mixin lien($couleur, $couleur__visite, $couleur__hover) {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	color: $couleur;
+	box-sizing: border-box;
+	border: 2px solid transparent;
+
+	&:visited {
+		color: $couleur__visite;
+		opacity: .8;
+
+		svg {
+			color: $couleur__visite;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $couleur__hover;
+		border-radius: 10px;
+		border: 2px solid $couleur__hover;
+
+		svg {
+			color: $couleur__hover;
+		}
+	}
+
+	svg {
+		color: $couleur;
+	}
+}
+

@@ -1,0 +1,7 @@
+@mixin menu ($couleur-fond) {
+    background-color: $couleur-fond;
+    
+    ul {
+        list-style-type: none;
+    }
+}

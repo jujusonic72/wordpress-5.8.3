@@ -1,0 +1,60 @@
+@mixin burger (
+	$position-haut,
+	$position-gauche,
+	$position-bas,
+	$position-droite,
+
+	$couleur-fond,
+	$couleur-icone
+) {
+	cursor: pointer;
+	position: fixed;
+	z-index: 100;
+	top: $position-haut;
+	left: $position-gauche;
+	bottom: $position-bas;
+	right: $position-droite;
+
+	background-color: $couleur-fond;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: $ombre-petite;
+
+	svg {
+		color: $couleur-icone;
+	}
+
+	& ~ .burger__checkbox {
+		display: none;
+    }
+    
+    &:focus,
+    &:active,
+    &:hover {
+        animation: brasser 1s infinite;
+    }
+}
+
+.burger__etiquette[for="site__header__util-checkbox"] {
+	@include burger(
+		15px,
+		unset,
+		unset,
+		15px,
+
+		$clair,
+		$accents
+	)
+}
+
+.burger__etiquette[for="site__barre__menu-principal-container-checkbox"] {
+	@include burger(
+		15px,
+		15px,
+		unset,
+		unset,
+
+		$accents,
+		$clair
+	)
+}

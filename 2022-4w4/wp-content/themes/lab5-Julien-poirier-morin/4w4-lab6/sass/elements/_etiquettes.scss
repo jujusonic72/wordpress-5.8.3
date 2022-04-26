@@ -1,0 +1,15 @@
+@mixin etiquette ($taille-texte, $couleur-fond, $couleur-texte) {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: $taille-texte;
+    margin: 1em 0;
+
+    &__contenu {
+        display: inline;
+        background-color: $couleur-fond;
+        color: $couleur-texte;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: $ombre-petite;
+    }
+}

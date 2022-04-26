@@ -1,0 +1,68 @@
+.site__header {
+    @include theme_sombre();
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+
+    @media screen and (min-width: $largeur__media-tablette) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__titre {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+
+        h1, h2 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        h1 {
+            animation: glisser-arrivee__hdr 3s forwards ease-in;
+        }
+
+        h2 {
+            animation: changer-couleur__clair 1s infinite;
+        }
+    } 
+
+    // Fonctionnement du menu burger grâce à la checkbox
+    #site__header__util-checkbox:checked ~ &__util {
+        transform: translate(0);
+    }
+
+    &__util {
+        @include theme_clair();
+        box-shadow: $ombre-petite;
+        
+        transform: translateX(100%);
+        transition: transform .5s;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: fixed;
+        right: 0;
+        padding: 1em;
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+.icone {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $largeur__media-tablette) {
+        flex-direction: row;
+    }
+
+    margin: 20px 0;  
+}
