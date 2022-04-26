@@ -22,6 +22,12 @@
     <section class="site__footer__rangee__droits">&copy; Collège de Maisonneuve - Tous droits réservés</section>
     <section class="site__footer__rangee__auteur">Thème réalisé par Julien Poirier Morin</section>
 </div>
+<div class="boite__modale">
+    <button class="boite__modale__ferme">X</button>
+    <article class="boite__modale__text">
+        Ceci est un test de modal le fonctionnement d'une boite de dialogue
+    </article>
+</div>
 <?php wp_footer() ?>
 </body>
 </html>
