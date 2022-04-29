@@ -9,7 +9,7 @@
     <?php show_admin_bar(true); ?>
 </head>
 <body <?php body_class("site"); ?> >
-    <header class="site__header">
+    <header class="site__header" style="background-color: <?= get_theme_mod('couleur_background_header') ?>">
         <?php the_custom_logo(); ?>
         <section class="site__header__titre">
             <a href="<?= esc_url(home_url('/')); ?>">

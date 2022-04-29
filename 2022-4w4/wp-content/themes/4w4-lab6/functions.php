@@ -1,5 +1,7 @@
 <?php 
 
+require_once("options/apparence.php");
+
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
 
@@ -192,5 +194,8 @@ Ce hook nous permettra d'adapter la requête avant d'exécuter cette requête
 */ 
 
 add_filter('query_vars', 'cidw_4w4_query_vars' );
+
+
+
 
 ?>
