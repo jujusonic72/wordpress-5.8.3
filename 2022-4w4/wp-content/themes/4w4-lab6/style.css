@@ -999,11 +999,11 @@ h6 {
   list-style-type: none;
 }
 
-.site__footer > * {
+.site__footer > *:not(script) {
   display: flex;
 }
 
-.site__footer > * section {
+.site__footer > *:not(script) section {
   display: flex;
   flex: 1;
 }

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="site__main">
+<main class="site__main" style="background-color: <?= get_theme_mod('couleur_background_main') ?>"­>
 <h1 class="site__main__titre">Liste des cours</h1>
     <?php if (have_posts()): ?>
         <?php while (have_posts()): the_post(); 
