@@ -3,17 +3,16 @@
     console.log('boite_modale.js');
     let boite__modale = document.querySelector('.boite__modale');
     let boite__modale__text = document.querySelector('.boite__modale__text');
-
     let cours__desc__suite = document.querySelectorAll('.cours__desc__suite');
-    console.log(cours__desc__suite);
-    console.log(boite__modale);
 
-    for (const bouton of cours__desc__suite) {
-        bouton.addEventListener('mousedown', function(){
+    let galerie__img = document.querySelectorAll('.galerie img');
+    console.log(galerie__img.length);
+    for (const img of galerie__img) {
+        img.addEventListener('mousedown', function(){
             console.log(this.tagName)
             boite__modale.classList.add('boite__modale__ouvrir')
             boite__modale__text.innerHTML = bouton.parentNode.parentNode.querySelector('.carte__desc__full').innerHTML
-            
+            console.log(this.getAttribute('src'));
         })
     }
 
