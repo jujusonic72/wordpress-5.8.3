@@ -1809,6 +1809,12 @@ Galerie gutenberg de la page d'accueil
   }
 }
 
+.home .site__main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* ===== GLOBAL ===== */
 body {
   font-family: Helvetica, sans-serif;
