@@ -1593,6 +1593,11 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
           transform: scale(0);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .boite__modale:hover {
@@ -1607,6 +1612,8 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   border-radius: 50%;
   background-color: #181818;
   color: #0088ff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .boite__modale__ferme:hover {
@@ -1640,12 +1647,15 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
           box-shadow: 0px 0px 10px grey;
 }
 
-.carte__desc__full {
-  display: none;
+.boite__modale img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
-.carte__desc__full figure {
-  display: none !important;
+.carte__desc__full {
+  display: none;
 }
 
 .erreur-404 h1 {
@@ -1822,6 +1832,13 @@ Galerie gutenberg de la page d'accueil
   .galerie {
     width: 75%;
   }
+}
+
+.galerie img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .home .site__main {

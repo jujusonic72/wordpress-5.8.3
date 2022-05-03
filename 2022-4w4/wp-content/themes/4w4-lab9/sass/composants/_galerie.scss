@@ -8,4 +8,10 @@ Galerie gutenberg de la page d'accueil
     @media screen and (min-width : $largeur__media-tablette){
         width: 75%;
     }
+    & img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        
+    }
 }

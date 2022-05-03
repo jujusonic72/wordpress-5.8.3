@@ -7,12 +7,17 @@
 
     let galerie__img = document.querySelectorAll('.galerie img');
     console.log(galerie__img.length);
+    // Creation d'un element img pour chaque image de la galerie
+    let elmimg = document.createElement('img');
+    //Dans l'article de la boite modale on ajoute la balise img
+    boite__modale__text.appendChild(elmimg);
     for (const img of galerie__img) {
         img.addEventListener('mousedown', function(){
             console.log(this.tagName)
             boite__modale.classList.add('boite__modale__ouvrir')
-            boite__modale__text.innerHTML = bouton.parentNode.parentNode.querySelector('.carte__desc__full').innerHTML
+            
             console.log(this.getAttribute('src'));
+            elmimg.setAttribute('src', this.getAttribute('src'));
         })
     }
 

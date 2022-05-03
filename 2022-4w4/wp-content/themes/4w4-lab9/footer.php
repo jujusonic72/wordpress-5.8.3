@@ -25,7 +25,7 @@
 <div class="boite__modale">
     <button class="boite__modale__ferme">X</button>
     <article class="boite__modale__text">
-        Ceci est un test de modal le fonctionnement d'une boite de dialogue
+        
         <!-- <img> -->
     </article>
 </div>

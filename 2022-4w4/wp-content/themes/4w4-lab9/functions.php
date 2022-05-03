@@ -7,16 +7,23 @@ function cidw_4w4_enqueue(){
 
     wp_enqueue_style('cidw4w4-police-google', "https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Secular+One&family=Zilla+Slab:wght@300&display=swap", false);
 
-    wp_enqueue_script('cidw-4w4-js-modal',
+    wp_register_script('cidw-4w4-js-modal',
                     get_template_directory_uri() . '/js/boite_modale.js',
                     array(),
                     filemtime(get_template_directory() . '/js/boite_modale.js'), 
                     true);
-    wp_enqueue_script('cidw-4w4-js-modal',
+
+    wp_register_script('cidw-4w4-js-caroussel',
                     get_template_directory_uri() . '/js/caroussel.js',
                     array(),
                     filemtime(get_template_directory() . '/js/caroussel.js'), 
                     true);
+    if(is_category(['cours', 'web', 'design', 'creation3d', 'utilitaire', 'jeu', 'video'])){
+        wp_enqueue_script('cidw-4w4-js-modal');
+    }
+    if(is_front_page()){
+        wp_enqueue_script('cidw-4w4-js-caroussel');
+    }
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
