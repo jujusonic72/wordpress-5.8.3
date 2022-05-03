@@ -5,7 +5,7 @@
         list-style-type: none;
     }
 
-    & > * {
+    & > *:not(script) {
         display: flex;
 
         section {
