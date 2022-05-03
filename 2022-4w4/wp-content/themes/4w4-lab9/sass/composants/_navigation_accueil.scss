@@ -14,7 +14,11 @@
         }
     }
 }
-.site__main.home{
+.menus__container{
+    display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
 }

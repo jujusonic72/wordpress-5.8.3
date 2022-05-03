@@ -677,6 +677,10 @@ h6 {
   grid-area: footer;
 }
 
+.site__main.home {
+  text-align: center;
+}
+
 /* ===== COMPOSANTS ===== */
 .cours {
   display: -webkit-box;
@@ -1788,12 +1792,23 @@ form.recherche__bouton {
   width: 100%;
 }
 
-.site__main.home {
+.menus__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
 /*
@@ -1807,6 +1822,12 @@ Galerie gutenberg de la page d'accueil
   .galerie {
     width: 75%;
   }
+}
+
+.home .site__main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ===== GLOBAL ===== */
