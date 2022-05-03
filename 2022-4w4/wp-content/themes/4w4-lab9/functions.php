@@ -12,6 +12,11 @@ function cidw_4w4_enqueue(){
                     array(),
                     filemtime(get_template_directory() . '/js/boite_modale.js'), 
                     true);
+    wp_enqueue_script('cidw-4w4-js-modal',
+                    get_template_directory_uri() . '/js/caroussel.js',
+                    array(),
+                    filemtime(get_template_directory() . '/js/caroussel.js'), 
+                    true);
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
