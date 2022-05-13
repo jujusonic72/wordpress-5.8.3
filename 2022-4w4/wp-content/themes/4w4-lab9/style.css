@@ -1274,13 +1274,13 @@ ul {
   list-style-type: none;
 }
 
-.site__footer > *:not(script) {
+.site__footer > *:not(script):not(style) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.site__footer > *:not(script) section {
+.site__footer > *:not(script):not(style) section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1332,7 +1332,7 @@ ul {
   color: #e4e4e4;
 }
 
-.site__footer__colonne > * {
+.site__footer__colonne > *:not(script) {
   margin: 1em;
   padding: 1em;
   border-radius: 10px;
@@ -1340,11 +1340,11 @@ ul {
   color: #e4e4e4;
 }
 
-.site__footer__colonne > * h1 {
+.site__footer__colonne > *:not(script) h1 {
   color: #e4e4e4;
 }
 
-.site__footer__colonne > * a {
+.site__footer__colonne > *:not(script) a {
   display: inline-block;
   text-decoration: none;
   padding: 10px;
@@ -1354,44 +1354,44 @@ ul {
   border: 2px solid transparent;
 }
 
-.site__footer__colonne > * a:visited {
+.site__footer__colonne > *:not(script) a:visited {
   color: gray;
   opacity: .8;
 }
 
-.site__footer__colonne > * a:visited svg {
+.site__footer__colonne > *:not(script) a:visited svg {
   color: gray;
 }
 
-.site__footer__colonne > * a:hover, .site__footer__colonne > * a:focus, .site__footer__colonne > * a:active {
+.site__footer__colonne > *:not(script) a:hover, .site__footer__colonne > *:not(script) a:focus, .site__footer__colonne > *:not(script) a:active {
   color: #0088ff;
   border-radius: 10px;
   border: 2px solid #0088ff;
 }
 
-.site__footer__colonne > * a:hover svg, .site__footer__colonne > * a:focus svg, .site__footer__colonne > * a:active svg {
+.site__footer__colonne > *:not(script) a:hover svg, .site__footer__colonne > *:not(script) a:focus svg, .site__footer__colonne > *:not(script) a:active svg {
   color: #0088ff;
 }
 
-.site__footer__colonne > * a svg {
+.site__footer__colonne > *:not(script) a svg {
   color: #e4e4e4;
 }
 
-.site__footer__colonne > * > * {
+.site__footer__colonne > *:not(script) > *:not(script) {
   width: 100%;
 }
 
-.site__footer__colonne > * > * .wp-block-image {
+.site__footer__colonne > *:not(script) > *:not(script) .wp-block-image {
   background-color: #0088ff;
 }
 
-.site__footer__colonne > * > * .wp-block-image img {
+.site__footer__colonne > *:not(script) > *:not(script) .wp-block-image img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   opacity: .5;
 }
 
-.site__footer__colonne > * > * .wp-block-image img {
+.site__footer__colonne > *:not(script) > *:not(script) .wp-block-image img {
   width: 100%;
   height: 100%;
 }
@@ -1406,7 +1406,7 @@ ul {
           align-items: center;
 }
 
-.site__footer__rangee > * {
+.site__footer__rangee > *:not(script) {
   padding: 15px;
 }
 
@@ -1483,8 +1483,8 @@ nav.menu-principal-container {
   padding: 15px;
   background-color: #181818;
   font-size: 3em;
-  width: 100vw;
-  height: 100vh;
+  width: 200vw;
+  height: 200vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1497,8 +1497,8 @@ nav.menu-principal-container {
           justify-content: center;
   position: fixed;
   top: 0px;
-  -webkit-transform: translateX(-100vw);
-          transform: translateX(-100vw);
+  -webkit-transform: translateX(-200vw);
+          transform: translateX(-200vw);
   -webkit-transition: -webkit-transform .5s ease-in-out;
   transition: -webkit-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
@@ -1913,8 +1913,39 @@ form.recherche__bouton {
   margin-left: 10px;
 }
 
-.home__menu .menu {
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style-type: none;
+}
+
+.menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu .accueil__prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu .accueil__aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu .accueil__etudiant .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu .menu-item {
+  width: 15%;
+  height: 250px;
+  padding: 10px;
+}
+
+.menu .menu-item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1922,20 +1953,41 @@ form.recherche__bouton {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  height: 100%;
 }
 
-.home__menu .menu .menu-item {
-  width: 100%;
+.menu .menu-item a hr {
+  width: 90%;
+}
+
+.menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu .menu-item a .menu-item-icone {
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  background-size: cover;
 }
 
 .menus__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1945,6 +1997,7 @@ form.recherche__bouton {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
+  list-style-type: none;
 }
 
 /*
