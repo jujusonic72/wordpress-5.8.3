@@ -99,13 +99,13 @@
         justify-content: center;
         width: 100%;
         border : 1ps solid red;
-        z-index: -1;
+        z-index: 1;
 
         button{
             width: 20px;
             height: 20px;
             border-radius: 100%;
-            z-index: 0;
+            z-index: 10;
             &:focus {
                 background-color: black;
             }

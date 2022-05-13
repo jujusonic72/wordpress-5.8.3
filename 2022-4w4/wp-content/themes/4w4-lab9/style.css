@@ -1435,7 +1435,7 @@ nav.menu-principal-container {
   height: 100vh;
   position: fixed;
   top: 0px;
-  left: 0px;
+  left: -5vw;
   -webkit-transform: translateX(-100vw);
           transform: translateX(-100vw);
   -webkit-transition: -webkit-transform .5s ease-in-out;
@@ -1484,6 +1484,19 @@ nav.menu-principal-container a svg {
 @media screen and (min-width: 600px) {
   nav.menu-principal-container {
     width: 30vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em;
+    border-radius: 0 10px 10px 0;
+    top: 9vh;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1492,7 +1505,7 @@ nav.menu-principal-container ul.menu {
 }
 
 nav.menu-principal-container ul.menu li.menu-item {
-  margin: 0;
+  margin: 0.5em 0;
 }
 
 nav.menu-principal-container ul.menu li.menu-item a {
@@ -1694,14 +1707,14 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
           justify-content: center;
   width: 100%;
   border: 1ps solid red;
-  z-index: -1;
+  z-index: 1;
 }
 
 .boite__carrousel__navigation button {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  z-index: 0;
+  z-index: 10;
 }
 
 .boite__carrousel__navigation button:focus {

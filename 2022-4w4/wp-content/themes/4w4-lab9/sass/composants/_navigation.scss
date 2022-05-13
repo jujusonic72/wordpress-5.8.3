@@ -8,19 +8,26 @@ nav.menu-principal-container {
 
     position: fixed;
     top: 0px;
-    left: 0px;
+    left: -5vw;
     transform: translateX(-100vw);
     transition: transform .5s ease-in-out;
 
     @media screen and (min-width: $largeur__media-tablette) {
         width: 30vw;
+        height: fit-content;
+        padding: 1em;
+        border-radius: 0 10px 10px 0;
+        top: 9vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     ul.menu {
         list-style: none;
         
         li.menu-item {
-            margin: 0;
+            margin: 0.5em 0;
 
             a {
                 padding: 5px;
