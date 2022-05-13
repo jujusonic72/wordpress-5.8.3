@@ -1,5 +1,5 @@
 <?php 
-
+include_once('options/apparence.php');
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
 
@@ -18,7 +18,7 @@ function cidw_4w4_enqueue(){
                     array(),
                     filemtime(get_template_directory() . '/js/caroussel.js'), 
                     true);
-    if(is_category(['menu'])){
+    if(is_category(['cours'])){
         wp_enqueue_script('cidw-4w4-js-modal');
     }
     if(is_front_page()){

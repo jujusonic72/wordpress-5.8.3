@@ -2,13 +2,16 @@ nav.menu-principal-container {
     @include theme_clair();
     padding: 15px;
     background-color: $clr-fond__nav;
-    font-size: 1.5em;
+    font-size: 3em;
     width: 100vw;
     height: 100vh;
-
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0px;
-    left: -5vw;
+    
     transform: translateX(-100vw);
     transition: transform .5s ease-in-out;
 
@@ -21,6 +24,8 @@ nav.menu-principal-container {
         text-align: center;
         align-items: center;
         justify-content: center;
+        left: -5vw;
+        font-size: 1.5em;
     }
 
     ul.menu {

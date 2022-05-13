@@ -7,7 +7,7 @@
     align-items: center;
 
     padding: 2rem;
-
+    
     @media screen and (min-width: $largeur__media-tablette) {
         flex-direction: row;
         justify-content: space-between;
@@ -18,8 +18,9 @@
     &__titre {
         display: flex;
         flex-direction: column;
-        margin: 2rem 0;
-
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         h1, h2 {
             margin-block-start: 0;
             margin-block-end: 0;
@@ -27,10 +28,12 @@
 
         h1 {
             animation: glisser-arrivee__hdr 3s forwards ease-in;
+            font-size: 6rem;
         }
 
         h2 {
             animation: changer-couleur__clair 1s infinite;
+            font-size: 3rem;
         }
     } 
 

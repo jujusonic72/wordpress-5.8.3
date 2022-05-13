@@ -1,20 +1,29 @@
+ul{
+    padding-inline-start: none;
+}
+
 .cours {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     &__filtre {
         display: flex;
-
+        flex-direction: column-reverse;
         .menu-categorie-cours-container {
             .menu {
                 display: flex;
-                
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 1em;
+                margin-bottom: 1em;
                 ul{
                     display: flex;
                     list-style-type: none;
                     flex-direction: row;
-                
+                    padding-inline-start: none;
                     li {
                         a {
                             @include etiquette(2em, $accents, $clair);
@@ -22,6 +31,14 @@
                     }
                 }
             }
+        }
+        &__tri{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
     }
     &__filtre__menu__ul{
