@@ -29,6 +29,10 @@
         <!-- <img> -->
     </article>
 </div>
+<div class="boite__carrousel">
+    <button class="boite__carrousel__ferme">X</button>
+    <section class="boite__carrousel__navigation"></section>
+</div>
 <?php wp_footer() ?>
 </body>
 </html>

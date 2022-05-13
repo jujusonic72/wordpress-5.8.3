@@ -1571,7 +1571,7 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
 }
 
-.boite__modale {
+.boite__modale, .boite__carrousel {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1600,15 +1600,16 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
           justify-content: center;
 }
 
-.boite__modale:hover {
+.boite__modale:hover, .boite__carrousel:hover {
   -webkit-box-shadow: 0px 0px 10px grey;
           box-shadow: 0px 0px 10px grey;
 }
 
-.boite__modale__ferme {
+.boite__modale__ferme, .boite__carrousel__ferme {
   width: 25px;
   height: 25px;
   margin: 5px;
+  z-index: 5;
   border-radius: 50%;
   background-color: #181818;
   color: #0088ff;
@@ -1616,18 +1617,18 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
       align-self: flex-start;
 }
 
-.boite__modale__ferme:hover {
+.boite__modale__ferme:hover, .boite__carrousel__ferme:hover {
   scale: 1.1;
   background-color: #0088ff;
   color: #181818;
 }
 
-.boite__modale__texte p {
+.boite__modale__texte p, .boite__carrousel__texte p {
   padding: 5px;
   font-size: 1.5rem;
 }
 
-.boite__modale__ouvrir {
+.boite__modale__ouvrir, .boite__carrousel__ouvrir {
   position: fixed;
   width: 50%;
   height: 50%;
@@ -1642,12 +1643,12 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
           transform: scale(1);
 }
 
-.boite__modale__ouvrir:hover {
+.boite__modale__ouvrir:hover, .boite__carrousel__ouvrir:hover {
   -webkit-box-shadow: 0px 0px 10px grey;
           box-shadow: 0px 0px 10px grey;
 }
 
-.boite__modale img {
+.boite__modale img, .boite__carrousel img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -1656,6 +1657,55 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 
 .carte__desc__full {
   display: none;
+}
+
+.boite__modale {
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+.boite__carrousel {
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%;
+}
+
+.boite__carrousel img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border: 1ps solid red;
+  z-index: -1;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  z-index: 0;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: black;
 }
 
 .erreur-404 h1 {

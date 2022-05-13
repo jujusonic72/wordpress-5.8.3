@@ -13,16 +13,16 @@ function cidw_4w4_enqueue(){
                     filemtime(get_template_directory() . '/js/boite_modale.js'), 
                     true);
 
-    wp_register_script('cidw-4w4-js-caroussel',
+    wp_register_script('cidw-4w4-js-carroussel',
                     get_template_directory_uri() . '/js/caroussel.js',
                     array(),
                     filemtime(get_template_directory() . '/js/caroussel.js'), 
                     true);
-    if(is_category(['cours', 'web', 'design', 'creation3d', 'utilitaire', 'jeu', 'video'])){
+    if(is_category(['menu'])){
         wp_enqueue_script('cidw-4w4-js-modal');
     }
     if(is_front_page()){
-        wp_enqueue_script('cidw-4w4-js-caroussel');
+        wp_enqueue_script('cidw-4w4-js-carroussel');
     }
 }
 
