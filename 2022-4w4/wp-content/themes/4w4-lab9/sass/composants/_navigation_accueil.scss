@@ -21,7 +21,7 @@
             width : 15%;
             height : 250px;
             padding : 10px;
-            background-color: $clr-gris-fonce;
+            
             a {
                 display : flex;
                 flex-direction: column;
@@ -48,7 +48,7 @@
         &:hover {
            
             a {
-               color: $alternative;
+               color: $clr-lien-hover__nav;
             }
         }    
 

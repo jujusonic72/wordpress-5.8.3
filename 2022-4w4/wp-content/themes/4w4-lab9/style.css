@@ -1272,12 +1272,15 @@ ul {
 
 .site__footer ul {
   list-style-type: none;
+  padding: 0;
+  font-size: large;
 }
 
 .site__footer > *:not(script):not(style) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style-type: none;
 }
 
 .site__footer > *:not(script):not(style) section {
@@ -1482,6 +1485,7 @@ nav.menu-principal-container {
   color: #e4e4e4;
   padding: 15px;
   background-color: #181818;
+  z-index: 100;
   font-size: 3em;
   width: 200vw;
   height: 200vh;
@@ -1545,9 +1549,7 @@ nav.menu-principal-container a svg {
 @media screen and (min-width: 600px) {
   nav.menu-principal-container {
     width: 30vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 15vh;
     padding: 1em;
     border-radius: 0 10px 10px 0;
     top: 9vh;
@@ -1565,10 +1567,21 @@ nav.menu-principal-container a svg {
 
 nav.menu-principal-container ul.menu {
   list-style: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 nav.menu-principal-container ul.menu li.menu-item {
   margin: 0.5em 0;
+  height: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px;
 }
 
 nav.menu-principal-container ul.menu li.menu-item a {
@@ -1978,6 +1991,10 @@ form.recherche__bouton {
   background-repeat: no-repeat;
   margin-top: auto;
   background-size: cover;
+}
+
+.menu .menu-item:hover a {
+  color: #0088ff;
 }
 
 .menus__container {

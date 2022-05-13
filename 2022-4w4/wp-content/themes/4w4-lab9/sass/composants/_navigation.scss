@@ -2,6 +2,7 @@ nav.menu-principal-container {
     @include theme_clair();
     padding: 15px;
     background-color: $clr-fond__nav;
+    z-index: 100;
     font-size: 3em;
     width: 200vw;
     height: 200vh;
@@ -11,13 +12,12 @@ nav.menu-principal-container {
     justify-content: center;
     position: fixed;
     top: 0px;
-    
     transform: translateX(-200vw);
     transition: transform .5s ease-in-out;
 
     @media screen and (min-width: $largeur__media-tablette) {
         width: 30vw;
-        height: fit-content;
+        height: 15vh;
         padding: 1em;
         border-radius: 0 10px 10px 0;
         top: 9vh;
@@ -30,10 +30,13 @@ nav.menu-principal-container {
 
     ul.menu {
         list-style: none;
-        
+        height: fit-content;
+        width: fit-content;
         li.menu-item {
             margin: 0.5em 0;
-
+            height: 3rem;
+            width: fit-content;
+            padding: 4px;
             a {
                 padding: 5px;
                 text-decoration: none;
