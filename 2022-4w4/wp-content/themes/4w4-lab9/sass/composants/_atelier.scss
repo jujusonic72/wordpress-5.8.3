@@ -1,0 +1,23 @@
+@keyframes glisser-arrivee__atelier {
+    0% {
+        transform: translateX(-125%);
+    }
+
+    50% {
+        transform: translateX(10%);
+    }
+
+    75% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.evenements__menu ul:nth-child(0) {
+    @include hover-ombre__rapide;
+    animation: glisser-arrivee__atelier .5s forwards;
+    color: red;
+}
+
