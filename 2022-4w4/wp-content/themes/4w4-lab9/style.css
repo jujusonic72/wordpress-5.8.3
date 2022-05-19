@@ -2081,13 +2081,12 @@ Galerie gutenberg de la page d'accueil
   }
 }
 
-.evenements__menu ul:nth-child(0) {
+.menu-item {
   -webkit-animation: glisser-arrivee__atelier .5s forwards;
           animation: glisser-arrivee__atelier .5s forwards;
-  color: red;
 }
 
-.evenements__menu ul:nth-child(0):hover {
+.menu-item:hover {
   -webkit-animation: hover-ombre .5s forwards;
           animation: hover-ombre .5s forwards;
 }

@@ -15,9 +15,8 @@
         transform: translateX(0);
     }
 }
-.evenements__menu ul:nth-child(0) {
+.menu-item {
     @include hover-ombre__rapide;
     animation: glisser-arrivee__atelier .5s forwards;
-    color: red;
 }
 
