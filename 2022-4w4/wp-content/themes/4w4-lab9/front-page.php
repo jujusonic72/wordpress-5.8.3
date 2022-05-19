@@ -23,6 +23,16 @@
                 ));
             ?>
     </div>
+    <div>
+        <h2>Ateliers</h2>
+            <?php
+                wp_nav_menu(array(
+                    "menu" => "atelier",
+                    "container" => "nav",
+                    "container_class" => "evenements__menu"
+                ));
+            ?>
+    </div>
 </div>
 
 <?php if (have_posts()): the_post();?>
