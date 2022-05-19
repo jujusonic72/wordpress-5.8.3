@@ -20,3 +20,27 @@
     animation: glisser-arrivee__atelier .5s forwards;
 }
 
+.atelier__desc{
+    width: 50%;
+    justify-content: space-around;
+}
+.atelier__dates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.atelier__heures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container__atelier{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    & div p{
+        margin: 3rem;
+    }
+}
