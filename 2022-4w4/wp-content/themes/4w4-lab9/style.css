@@ -1953,8 +1953,10 @@ form.recherche__bouton {
 }
 
 .menu .menu-item {
-  width: 15%;
-  height: 250px;
+  width: 20%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 10px;
 }
 
@@ -1984,17 +1986,49 @@ form.recherche__bouton {
   font-size: 1rem;
 }
 
-.menu .menu-item a .menu-item-icone {
+.menu .menu-item:hover a {
+  color: #0088ff;
+}
+
+.menu .icone__Cpp .menu-item-icone {
   width: 3rem;
   height: 3rem;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: auto;
   background-size: cover;
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+  z-index: 10;
 }
 
-.menu .menu-item:hover a {
-  color: #0088ff;
+.menu .icone__Cs .menu-item-icone {
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  background-size: cover;
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
+.menu .icone__Rct .menu-item-icone {
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  background-size: cover;
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu .icone__UE .menu-item-icone {
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  background-size: cover;
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
 }
 
 .menus__container {

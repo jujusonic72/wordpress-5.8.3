@@ -19,11 +19,11 @@ get_header();
           <?php endif ?>
           <p>Description de l'atelier : <?php the_field('resume') ?></p>
           <h2>Organisé par : <?php the_field('animateur') ?></h2>
-          <p>Date du début de l'atelier : <?php the_field('dateDebut') ?></p>
-          <p>Date de la fin de l'atelier : <?php the_field('dateFin') ?></p>
+          <p>Date du début de l'atelier : <?php the_field('datedebut') ?></p>
+          <p>Date de la fin de l'atelier : <?php the_field('datefin') ?></p>
           <p>Jour de l'atelier : <?php the_field('jour') ?></p>
-          <p>Heure du début de l'atelier : <?php the_field('heureDebut') ?></p>
-          <p>Heure de la fin de l'atelier : <?php the_field('heureFin') ?></p>
+          <p>Heure du début de l'atelier : <?php the_field('heuredebut') ?></p>
+          <p>Heure de la fin de l'atelier : <?php the_field('heurefin') ?></p>
           <p>Durée de l'atelier : <?php the_field('duree') ?></p>
           <p>Local ou se déroulera l’atelier : <?php the_field('local') ?></p>
           <?php the_content() ?>

@@ -18,8 +18,8 @@
         }
 
         .menu-item { //li
-            width : 15%;
-            height : 250px;
+            width : 20%;
+            height : fit-content;
             padding : 10px;
             
             a {
@@ -36,15 +36,9 @@
                 .menu-item-description { // span
                     font-size: 1rem;
                 }
-                .menu-item-icone{
-                    width : 3rem;
-                    height : 3rem;
-                    background-position : center;
-                    background-repeat: no-repeat;
-                    margin-top : auto;
-                    background-size: cover;
-                }
+                
             }
+            
         &:hover {
            
             a {
@@ -53,7 +47,51 @@
         }    
 
         }
-
+        .icone__Cpp{
+            .menu-item-icone{
+                width : 3rem;
+                height : 3rem;
+                background-position : center;
+                background-repeat: no-repeat;
+                margin-top : auto;
+                background-size: cover;
+                background-image: url('https://s2.svgbox.net/files.svg?ic=css');
+                z-index: 10;
+            }
+        }
+        .icone__Cs{
+            .menu-item-icone{
+                width : 3rem;
+                height : 3rem;
+                background-position : center;
+                background-repeat: no-repeat;
+                margin-top : auto;
+                background-size: cover;
+                background-image: url('https://s2.svgbox.net/files.svg?ic=git');
+            }
+        }
+        .icone__Rct{
+            .menu-item-icone{
+                width : 3rem;
+                height : 3rem;
+                background-position : center;
+                background-repeat: no-repeat;
+                margin-top : auto;
+                background-size: cover;
+                background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');
+            }
+        }
+        .icone__UE{
+            .menu-item-icone{
+                width : 3rem;
+                height : 3rem;
+                background-position : center;
+                background-repeat: no-repeat;
+                margin-top : auto;
+                background-size: cover;
+                background-image: url('https://s2.svgbox.net/files.svg?ic=html');
+            }
+        }
 
 
     }
